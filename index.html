@@ -1,1 +1,184 @@
-<h1>Under Construction</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<title>S.Nishida's Portfolio</title>
+</head>
+<body>
+    <header id="Header">
+            <h1 class="HeaderTitle">S.Nishida's Portfolio</h1>
+        <div class="navToggle">
+            <i class="fa fa-bars"></i>
+        </div>
+        <nav class="GlobalMenu">
+            <ul class="MainMenu">
+                <li><a href="#Header">HOME</a></li>
+                <li><a href="#Profile">PROFILE</a></li>
+                <li><a href="#Skill">SKILL</a></li>
+                <li><a href="#Work">WORKS</a></li>
+                <li><a href="#Blog">BLOG</a></li>
+                <li><a href="#Contact">CONTACT</a></li>
+            </ul>
+            <ul class="social">
+                <li><a href="https://twitter.com/nishida216" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main -->
+<div class="main">
+    <!-- profile -->
+    <section id="Profile" class="fadein">
+    <h2 class="caption">PROFILE</h2>
+    <p class="ProfileBody">
+        はじめまして。S.Nishida 25歳です。<br>
+        現在は大手SIerで部内受発注システムの開発・保守を行なっております。<br>
+        また、Apache httpd+PHP+MySQLで部内の便利サービスを仕事の合間に一人で作成したりしています。<br>
+        大学時代は情報系を専攻しており、CNNを用いて３DCADモデル検索の研究をしていました(<a href="http://db-event.jpn.org/deim2018/data/papers/134.pdf" target="_blank">論文はこちら</a>)。<br>
+        SIerとして上流工程の業務をこなしつつ、自分で実装もできる人材を目指して日々勉強中です。<br>
+    </p>
+    </section>
+    <!-- skill -->
+    <section id="Skill" class="fadein">
+    <h2 class="caption">SKILL</h2>
+    <div class="box-list">
+    <div class="box">
+        <h3><i class="fas fa-desktop fa-fw"></i>フロントエンド系</h3>
+        <ul>
+            <li>javascript</li>
+            <li>jQuery</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h3><i class="fas fa-desktop fa-fw"></i>バックエンド系</h3>
+        <ul>
+            <li>PHP 5.6</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h3><i class="fas fa-database fa-fw"></i>DB系</h3>
+        <ul>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+        </ul>
+    </div>
+    </div>
+    <div class="box-list">
+    <div class="box">
+        <h3><i class="fas fa-server fa-fw"></i>インフラ・ハードウェア系</h3>
+        <ul>
+            <li>CentOS7 + Apache httpd</li>
+            <li>Windows Server 2012 R2 + IIS</li>
+            <li>ESXi</li>
+            <li>Hyper-V</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h3><i class="fas fa-info fa-fw"></i>その他</h3>
+        <ul>
+            <li>MATLAB（大学時代）</li>
+            <li>Python 3.0</li>
+            <li>シェルスクリプト</li>
+            <li>Windows bat</li>
+            <li>PowerShell</li>
+            <li>Excel VBA</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h3><i class="fas fa-award fa-fw"></i>保有資格</h3>
+        <ul>
+            <li>基本情報技術者</li>
+            <li>応用情報技術者</li>
+            <li>情報処理安全確保支援士(合格)</li>
+            <li>ネットワークスペシャリスト</li>
+            <li>Java SE 7/8 Bronze</li>
+        </ul>
+    </div>
+    </div>
+    </section>
+    <!-- work -->
+    <section id="Work" class="fadein">
+    <h2 class="caption">WORKS</h2>
+    <div class="box-list">
+        <div class="box">
+            <a href="#"><img src="img/myportfolio.png" alt="準備中・・・" width="100%"></a>
+            <h3>My Portfolio</h3>
+            <p>このページになります。<br>
+                Bootstrapを使わずにHTML5, CSS, JQueryでシンプルに仕上げてみました。</p>
+        </div>
+    </div>
+    </section>
+    <!-- blog -->
+    <section id="Blog" class="fadein">
+    <h2 class="caption">BLOG</h2>
+    <p class="BlogBody">準備中・・・</p>
+    </section>
+    <!-- contact -->
+    <section id="Contact" class="fadein">
+        <h2 class="caption">CONTACT</h2>
+        <p class="ContactBody">TwitterのDMやリプから気軽にご連絡ください。<br><br>
+        <a href="https://twitter.com/nishida216" target="_blank"><i class="fab fa-twitter fa-2x"></i></a><br>
+        </p>
+    </section>
+    <!-- footer -->
+    <footer>
+        <p class="copylight">Created by S.Nishida</p>
+    </footer>
+    
+    <!-- jquery -->
+    <script>
+        // GlobalMenu挙動
+        $(function() {
+            $(window).click(function(event) {
+                // メニューボタンが押された場合
+                if ($(event.target).closest('div').hasClass('navToggle')) {
+                    $('.navToggle').toggleClass('active');
+                    if ($('.navToggle').hasClass('active')) {
+                        // GlobalMenu非表示->表示
+                        $('.GlobalMenu').addClass('active');
+                        $('.navToggle').children('i').removeClass('fa fa-bars');
+                        $('.navToggle').children('i').addClass('fa fa-times');
+                    } else {
+                        // GlobalMenu表示->非表示
+                        $('.GlobalMenu').removeClass('active');
+                        $('.navToggle').children('i').removeClass('fa fa-times');
+                        $('.navToggle').children('i').addClass('fa fa-bars');
+                    }
+                }
+                // GlobalMenuが押された場合
+                else if ($(event.target).closest('nav').hasClass('GlobalMenu')) {
+                    $('.GlobalMenu').removeClass('active');
+                    $('.navToggle').toggleClass('active');
+                    $('.navToggle').children('i').removeClass('fa fa-times');
+                    $('.navToggle').children('i').addClass('fa fa-bars');
+                }
+                // GlobalMenuが表示されている時にGlobalMenu以外が押された場合
+                else {
+                    if (($('.navToggle').hasClass('active'))) {
+                        $('.GlobalMenu').removeClass('active');
+                        $('.navToggle').toggleClass('active');
+                        $('.navToggle').children('i').removeClass('fa fa-times');
+                        $('.navToggle').children('i').addClass('fa fa-bars');
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        // fadein
+        $(window).scroll(function() {
+            $('.fadein').each(function() {
+                var elemPos = $(this).offset().top,
+                scroll = $(window).scrollTop(),
+                windowHeight = $(window).height();
+                if (scroll > elemPos - windowHeight + 100) {
+                    $(this).addClass('scrollin');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
