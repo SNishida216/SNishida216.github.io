@@ -17,16 +17,12 @@ html,body, .main{
 }
 #Header{
     margin-top: 0px;
-    height: 100vh;
+    width: 100vw;
+    height: 95vh;
     background-image: url("../img/billiard2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px;
-}
-@supports (-ms-ime-align:auto){
-    html{
-        height: auto;
-    }
 }
 .HeaderTitle{
     font-family: 'Anton', sans-serif;
