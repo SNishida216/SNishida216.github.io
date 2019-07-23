@@ -4,7 +4,7 @@ html,body, .main{
     width: 100%;
     margin: 0px;
     padding: 0px;
-    line-height: 3em;
+    line-height: 2em;
     background-color: #fffafa;
 }
 .fadein{
@@ -39,16 +39,11 @@ html,body, .main{
     position: fixed;
     right: 15px;
     top: 5px;
-    cursor: pointer;
     z-index: 3;
     text-align: center;
     font-size: 3em;
-    color: #000000;
+    color: #ffffff;
     transition-duration: 0.8s;
-}
-.navToggle:hover{
-    color: #808080;
-    transform: translateY(-0.05em);
 }
 .GlobalMenu {
     position: fixed;
@@ -101,17 +96,11 @@ html,body, .main{
 }
 .ProfileBody{
     text-align: center;
-    font-size: 1.5em;
-}
-.box-list{
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    margin: 0 auto;
+    font-size: 1em;
+    word-wrap: normal;
 }
 .box{
-    float: left;
-    width: 30vw;
+    width: 95%;
     height: auto;
     margin: 2em auto;
     text-align: center;
@@ -127,7 +116,7 @@ html,body, .main{
 }
 .box ul li{
     text-align: left;
-    font-size: 1.3em;
+    font-size: 1em;
     margin: 0.3em;
 }
 .box img{
@@ -135,17 +124,17 @@ html,body, .main{
 }
 .box p{
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1em;
     margin: 0.3em;
 }
 .BlogBody{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 .ContactBody{
     text-align: center;
     list-style-type: none;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 footer{
     text-align:center;
