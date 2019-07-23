@@ -20,7 +20,7 @@ html,body, .main{
     margin-top: 0px;
     height: 95%;
     background-image: url("../img/billiard2.jpg");
-    background-size: auto;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: 0px;
 }
