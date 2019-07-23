@@ -5,6 +5,7 @@ html,body, .main{
     padding: 0px;
     line-height: 2em;
     background-color: #fffafa;
+    height: 100%;
 }
 .fadein{
     opacity: 0;
@@ -17,8 +18,7 @@ html,body, .main{
 }
 #Header{
     margin-top: 0px;
-    width: 100vw;
-    height: 95vh;
+    height: 95%;
     background-image: url("../img/billiard2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
