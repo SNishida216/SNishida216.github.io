@@ -29,8 +29,8 @@ html,body, .main{
     position: absolute;
     line-height: 1em;
     margin-top: 0;
-    left: 5%;
-    top: 35%;
+    left: 10px;
+    top: 250px;
     font-size: 4em;
     color: #ffffff;
 }
