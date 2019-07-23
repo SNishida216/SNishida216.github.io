@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 
 html,body, .main{
-    width: 100%;
     margin: 0px;
     padding: 0px;
     line-height: 2em;
@@ -31,7 +30,7 @@ html,body, .main{
     margin-top: 0;
     left: 1vw;
     top: 35vh;
-    font-size: 5em;
+    font-size: 4em;
     color: #ffffff;
 }
 .navToggle {
