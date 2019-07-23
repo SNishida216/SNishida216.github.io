@@ -37,13 +37,14 @@ html,body, .main{
 .navToggle {
     display: block;
     position: fixed;
-    right: 15px;
-    top: 5px;
+    right: 0px;
+    top: 0px;
     z-index: 3;
     text-align: center;
     font-size: 3em;
-    color: #ffffff;
-    transition-duration: 0.8s;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 1px;
 }
 .GlobalMenu {
     position: fixed;
@@ -87,6 +88,7 @@ html,body, .main{
 }
 .caption {
     margin-top: 5em;
+    padding: 1em;
     font-family: 'Anton', sans-serif;
     font-size: 2.8em;
     text-align: center;
@@ -117,7 +119,7 @@ html,body, .main{
 .box ul li{
     text-align: left;
     font-size: 1em;
-    margin: 0.3em;
+    margin: 0.5em 0.2em;
 }
 .box img{
     vertical-align: bottom;
