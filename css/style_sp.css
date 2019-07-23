@@ -24,7 +24,7 @@ html,body, .main{
     background-position: 0px;
 }
 @supports (-ms-ime-align:auto){
-    #Header{
+    html{
         height: auto;
     }
 }
