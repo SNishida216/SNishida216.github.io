@@ -134,7 +134,9 @@
     <script>
         // GlobalMenu挙動
         $(function() {
-            $(window).click(function(event) {
+            var clickEventType = ((window.ontouchstart !== null) ? 'click':'touchend');
+
+            $(window).on(clickEventType, function(event) {
                 // メニューボタンが押された場合
                 if ($(event.target).closest('div').hasClass('navToggle')) {
                     $('.navToggle').toggleClass('active');
