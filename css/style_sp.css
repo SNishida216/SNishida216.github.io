@@ -18,9 +18,9 @@ html,body, .main{
 }
 #Header{
     margin-top: 0px;
-    height: 95%;
+    height: 540px;
     background-image: url("../img/billiard2.jpg");
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px;
 }
