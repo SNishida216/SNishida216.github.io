@@ -16,7 +16,7 @@ html,body, .main{
     opacity: 1;
     transform: translate(0, 0);
 }
-#Header{
+#header{
     margin-top: 0px;
     height: 540px;
     background-image: url("../img/billiard2.jpg");
@@ -24,7 +24,7 @@ html,body, .main{
     background-repeat: no-repeat;
     background-position: 0px;
 }
-.HeaderTitle{
+.header-title{
     font-family: 'Anton', sans-serif;
     position: absolute;
     line-height: 1em;
@@ -34,7 +34,7 @@ html,body, .main{
     font-size: 4em;
     color: #ffffff;
 }
-.navToggle {
+.nav-toggle {
     display: block;
     position: fixed;
     right: 0px;
@@ -46,7 +46,7 @@ html,body, .main{
     background-color: #ffffff;
     padding: 1px;
 }
-.GlobalMenu {
+.global-menu {
     position: fixed;
     z-index: 2;
     top: 0;
@@ -58,26 +58,26 @@ html,body, .main{
     transition: all 0.6s;
     width: 50%;
 }
-.GlobalMenu ul {
+.global-menu ul {
     background: #ccc;
     margin: 0 auto;
     padding: 0;
     width: 100%;
 }
-.GlobalMenu ul li {
+.global-menu ul li {
     font-size: 1.1em;
     list-style-type: none;
     padding: 0;
 }
-.MainMenu li {
+.main-menu li {
     border-bottom: 1px dotted #333;
 }
-.GlobalMenu ul li a {
+.global-menu ul li a {
     display: block;
     color: #000;
     padding: 1em 0;
 }
-.GlobalMenu.active {
+.global-menu.active {
     transform: translateY(0%);
 }
 .social li {
@@ -93,10 +93,10 @@ html,body, .main{
     font-size: 2.8em;
     text-align: center;
 }
-#Profile{
+#profile{
     margin-top: 0;
 }
-.ProfileBody{
+.profile-body{
     text-align: center;
     font-size: 1em;
     word-wrap: normal;
@@ -129,11 +129,11 @@ html,body, .main{
     font-size: 1em;
     margin: 0.3em;
 }
-.BlogBody{
+.skill-header{
     text-align: center;
     font-size: 1em;
 }
-.ContactBody{
+.contact-body{
     text-align: center;
     list-style-type: none;
     font-size: 1em;
